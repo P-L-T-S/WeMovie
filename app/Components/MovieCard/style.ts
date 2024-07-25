@@ -31,6 +31,10 @@ export const CardWrapper = styled.section`
     width: 306px;
     height: 40px;
 
+    &.added{
+      background-color: #039B00;
+    }
+
     &:hover {
       cursor: pointer;
     }
