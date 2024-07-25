@@ -59,7 +59,7 @@ export default function Page() {
     }, 0);
   }
 
-  addEventListener("resize", (e: any) => {
+  window.document.addEventListener("resize", (e: any) => {
     const newSize = e.target.window.innerWidth;
 
     setScreenSize(newSize);
