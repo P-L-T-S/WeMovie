@@ -59,12 +59,6 @@ export default function Page() {
     }, 0);
   }
 
-  window.document.addEventListener("resize", (e: any) => {
-    const newSize = e.target.window.innerWidth;
-
-    setScreenSize(newSize);
-  });
-
   if (moviesOnCart.length == 0) {
     return <NotFound />;
   }
