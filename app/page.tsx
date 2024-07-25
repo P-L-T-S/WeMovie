@@ -16,9 +16,9 @@ export default function Home() {
     setTimeout(async () => {
       const res = await GetMovies();
       setMovies(res);
+      
+      setIsLoading(false);
     }, 5000);
-
-    setIsLoading(false);
   }
 
   useEffect(() => {
